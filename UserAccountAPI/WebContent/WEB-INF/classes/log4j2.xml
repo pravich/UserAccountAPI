@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="debug">
 	<Properties>
-		<Property name="log-path">D:/temp/logs</Property>
+		<Property name="log-path">/home/wiz/logs</Property>
 		<Property name="log-filename">UserDirectoryAPI</Property>
 	</Properties>
 

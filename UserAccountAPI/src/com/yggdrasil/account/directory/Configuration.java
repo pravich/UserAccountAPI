@@ -13,12 +13,15 @@ import org.apache.logging.log4j.Logger;
 
 public class Configuration {
 	private static Logger logger = LogManager.getLogger(Configuration.class);
-	private static String configFilename = "D:/Temp/logs/config.properties";
+	
+	// probably in static block cannot refer to any relative path in WebContent.
+	// Then have to use absolute "file system" path. 
+	private static String configFilename = "/home/wiz/logs/config.properties";
 	public static final String providerUrl;
 	public static final String securityAuthentication;
 	public static final String securityPrincipal;
 	public static final String securityCredential;
-	public static final Hashtable<String, String> properties; 
+	public static final Hashtable<String, String> properties;
 	
 	static {
 		Properties prop = new Properties();
